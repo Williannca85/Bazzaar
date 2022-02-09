@@ -6,12 +6,14 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import CustomDrawer from '../components/CustomDrawer';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Material from 'react-native-vector-icons/MaterialIcons';
 
 import HomeScreen from '../Pages/HomeScreen'
 import ProfileScreen from '../Pages/ProfileScreen';
 import MessagesScreen from '../Pages/MessagesScreen';
-import MomentsScreen from '../Pages/MomentsScreen';
+import PagamentosScreen from '../Pages/PagamentosScreen';
 import SettingsScreen from '../Pages/SettingsScreen';
+import CardScreen from '../Pages/CardScreen';
 
 import TabNavigator from './TabNavigator';
 
@@ -58,16 +60,25 @@ const AuthStack = () => {
         component={MessagesScreen}
         options={{
           drawerIcon: ({color}) => (
-            <Ionicons name="chatbox-ellipses-outline" size={22} color={color} />
+            <Material name="category" size={22} color={color} />
           ),
         }}
       />
       <Drawer.Screen
         name="Pagamentos"
-        component={MomentsScreen}
+        component={PagamentosScreen}
         options={{
           drawerIcon: ({color}) => (
-            <Ionicons name="timer-outline" size={22} color={color} />
+            <Ionicons name="cart-outline" size={22} color={color} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Cartões"
+        component={CardScreen}
+        options={{
+          drawerIcon: ({color}) => (
+            <Ionicons name="card-outline" size={22} color={color} />
           ),
         }}
       />
