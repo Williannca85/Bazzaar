@@ -4,12 +4,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
-/* import HomeScreen from '../screens/HomeScreen';
-import CartScreen from '../screens/CartScreen';
-import FavoriteScreen from '../screens/FavoriteScreen';
-import RoupaDetailsScreen from '../screens/RoupaDetailsScreen'; */
 
-import HomeScreen from '../Pages/HomeScreen';
+import HomeScreen from '../Pages/HomeScreen'; 
 import CartScreen from '../Pages/CartScreen';
 import FavoriteScreen from '../Pages/FavoriteScreen';
 import RoupaDetailsScreen from '../Pages/RoupaDetailsScreen';

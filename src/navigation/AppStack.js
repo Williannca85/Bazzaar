@@ -1,5 +1,33 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
+/* import {createStackNavigator} from '@react-navigation/stack'; */
+
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import HomeScreen from '../Pages/HomeScreen'
+
+
+/* const Stack = createStackNavigator(); */
+
+const Drawer = createDrawerNavigator();
+
+const AuthStack = () => {
+  return (
+
+    <Drawer.Navigator screenOptions={{headerShown: false}}>
+        <Drawer.Screen name="Home" component={HomeScreen} />
+       {/*  <Drawer.Screen name="Onboarding" component={OnboardingScreen} /> */}
+    </Drawer.Navigator>
+
+
+/*     <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Home" component={HomeScreen} />
+    </Stack.Navigator> */
+  );
+};
+
+export default AuthStack;
+
+
+/* import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import CustomDrawer from '../components/CustomDrawer';
@@ -81,3 +109,5 @@ const AuthStack = () => {
 };
 
 export default AuthStack;
+ */
+

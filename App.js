@@ -1,19 +1,10 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  Text,
-  View,
-  TouchableOpacity,
-} from 'react-native';
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-/* import styles from '../Bazzaar/src/styles'; */
-import Icon from 'react-native-vector-icons/FontAwesome';
-import LinearGradient from 'react-native-linear-gradient';
-import HomeScreen from './src/screens/HomeScreen';
+import AppStack from './src/navigation/AppStack';
 
 
 /* import HomeScreen from '../src/components/HomeScreen';  */
@@ -25,25 +16,32 @@ const App = () =>{
 
      return   (
 
-     <NavigationContainer>
+      <NavigationContainer>
+          {/* <AuthStack/> */}
+          <AppStack />
+      </NavigationContainer>
+ ); 
+}
+
+/*      <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen 
-            name="Main" 
-            component={Main} 
+            name="Onboarding" 
+            component={OnboardingScreen} 
             options={{headerShown:false}} 
             />
 
              <Stack.Screen 
-            name="Home" 
-            component={HomeScreen} 
+            name="Login" 
+            component={LoginScreen} 
             options={{headerShown:false}} 
             />
         </Stack.Navigator> 
       </NavigationContainer>
      ); 
-}
+} */
 
-const Main = ({navigation}) =>{
+/* const Main = ({navigation}) =>{
  
       return (
     
@@ -97,9 +95,9 @@ const Main = ({navigation}) =>{
       </LinearGradient>
       )
     
-    }
+    } */
     
-    const Home = () => {
+/*     const Home = () => {
 
           return (
 
@@ -108,7 +106,7 @@ const Main = ({navigation}) =>{
            </View>
 
           );
-    }
+    } */
     
     export default App;
     
