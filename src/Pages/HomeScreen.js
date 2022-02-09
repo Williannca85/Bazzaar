@@ -39,16 +39,6 @@ export default function HomeScreen ({navigation}) {
           <SafeAreaView style={{flex: 1, backgroundColor: '#999999'}}>
                <ScrollView style={{padding: 20}}>
 
-{/*                <LinearGradient
-                             style={{
-                                  height: '100%', 
-                                  width: '100%', 
-                                  }} 
-                   
-                             start={{x:0,y:0.5}}
-                             end={{x:0.5,y:0}}
-                             locations={[.5,1]}
-                                  colors={['#d5a5c5','#f9ccba','#94d7ee']}> */}
                <View
                      style={{
                          flexDirection: 'row',
@@ -163,7 +153,6 @@ export default function HomeScreen ({navigation}) {
               }
             />
           ))}
-{/*           </LinearGradient>  */}
       </ScrollView>
     </SafeAreaView>
   );

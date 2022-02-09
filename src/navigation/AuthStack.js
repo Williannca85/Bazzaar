@@ -17,8 +17,6 @@ const AuthStack = () => {
             component={OnboardingScreen} 
             /> 
 
-          {/*   <Stack.Screen name="Home" component={Home} /> */}
-
             <Stack.Screen 
             name="Login" 
             component={LoginScreen} 

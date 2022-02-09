@@ -74,7 +74,7 @@ export const Promocoes = [
     subtitulo: 'Masc',
     Novo: 'No',
     valor: 'R$ 182.99',
-    id: '1',
+    id: '7',
   },
   {
    /*  poster: require('../../assets/images/battlefield-2042.webp'), */
@@ -83,7 +83,7 @@ export const Promocoes = [
     subtitulo: 'Vestido',
     Novo: 'No',
     valor: 'R$ 59.99',
-    id: '2',
+    id: '8',
   },
   {
    /*  poster: require('../../assets/images/miles-morales.webp'), */
@@ -92,7 +92,7 @@ export const Promocoes = [
     subtitulo: 'Vestido',
     Novo: 'No',
     valor: 'R$ 85.99',
-    id: '3',
+    id: '9',
   },
   {
     poster: require('../assets/images/polo-malha.jpg'),
@@ -100,7 +100,7 @@ export const Promocoes = [
     subtitulo: 'Polo',
     Novo: 'No',
     valor: 'R$ 64.99',
-    id: '4',
+    id: '10',
   },
   {
     poster: require('../assets/images/VestidoPretoFem.jpg'),
@@ -108,7 +108,7 @@ export const Promocoes = [
     subtitulo: 'Vestido',
     Novo: 'No',
     valor: 'R$ 85.99',
-    id: '5',
+    id: '11',
   },
   {
     poster: require('../assets/images/MangaCompridaMasc.jpg'),
@@ -116,7 +116,7 @@ export const Promocoes = [
     subtitulo: 'Camisa Masc',
     Novo: 'No',
     valor: 'R$ 25.99',
-    id: '6',
+    id: '12',
   },
 ];
 
