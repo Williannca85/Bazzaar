@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
@@ -14,7 +14,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 
 const Tab = createBottomTabNavigator();
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 const HomeStack = () => {
   return (
@@ -41,9 +41,9 @@ const TabNavigator = () => {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarStyle: {backgroundColor: '#AD40AF'},
+        tabBarStyle: {backgroundColor: '#0e105cab'},
         tabBarInactiveTintColor: '#fff',
-        tabBarActiveTintColor: 'yellow',
+        tabBarActiveTintColor: '#f9ccbaff',
       }}>
       <Tab.Screen
         name="Inicio"
@@ -51,7 +51,7 @@ const TabNavigator = () => {
         options={({route}) => ({
           tabBarStyle: {
             display: getTabBarVisibility(route),
-            backgroundColor: '#AD40AF',
+            backgroundColor: '#0e105cab',
           },
           tabBarIcon: ({color, size}) => (
             <Ionicons name="home-outline" color={color} size={size} />
@@ -63,7 +63,7 @@ const TabNavigator = () => {
         component={CartScreen}
         options={{
           tabBarBadge: 3,
-          tabBarBadgeStyle: {backgroundColor: 'yellow'},
+          tabBarBadgeStyle: {backgroundColor: '#f9ccbaff'},
           tabBarIcon: ({color, size}) => (
             <Ionicons name="cart-outline" color={color} size={size} />
           ),

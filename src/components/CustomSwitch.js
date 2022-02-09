@@ -40,7 +40,7 @@ export default function CustomSwitch({
         <Text
           style={{
             color: getSelectionMode == 1 ? '#ffffff' : '#AD40AF',
-            ffontSize: 16, 
+            fontSize: 16, 
             fontFamily: 'Poppins-Bold'
           }}>
           {option1}
@@ -59,7 +59,7 @@ export default function CustomSwitch({
         <Text
           style={{
             color: getSelectionMode == 2 ? '#ffffff' : '#AD40AF',
-            ffontSize: 16, 
+            fontSize: 16, 
             fontFamily: 'Poppins-Bold'
           }}>
           {option2}

@@ -20,18 +20,18 @@ const CustomDrawer = props => {
         {...props}
         contentContainerStyle={{backgroundColor: '#8200d6'}}>
         <ImageBackground
-/*           source={require('../../assets/images/menu-bg.jpeg')} */
+          /*           source={require('../../assets/images/menu-bg.jpeg')} */
           source={require('../assets/images/menuEstilizado.jpg')}
           style={{padding: 20}}>
           <Image
-             source={require('../assets/images/user-profile.jpg')}
-/*             source={require('../../assets/images/user-profile.jpg')} */
+            source={require('../assets/images/user-profile.jpg')}
+            /*             source={require('../../assets/images/user-profile.jpg')} */
             style={{height: 50, width: 50, borderRadius: 40, marginBottom: 10}}
           />
           <Text
             style={{
-              color: '#fff',
-              fontSize: 18,
+              color: '#000000',
+              fontSize: 14,
               fontFamily: 'Poppins-Medium',
               marginBottom: 5,
             }}>
@@ -40,8 +40,9 @@ const CustomDrawer = props => {
           <View style={{flexDirection: 'row'}}>
             <Text
               style={{
-                color: '#fff',
-                fontFamily: 'Poppins-Regular',
+                color: '#000000',
+                fontSize: 10,
+                fontFamily: 'Poppins-Medium',
                 marginRight: 5,
               }}>
               abcde@email.com
